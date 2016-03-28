@@ -3,14 +3,13 @@ import java.util.Scanner;
 
 public class Graph{
 
-	private static final String NEWLINE = System.getProperty("line.separator");
+	private static final String NEWLINE = System.getProperty("line.separator"); //获得换行符
 	
 	private static Scanner scanner = new Scanner(System.in);
 	
 	private final int V;
 	private int E;
-	private Bag<Integer>[] adj;
-	
+	private Bag<Integer>[] adj;    //和v相邻的所有顶点
 	
 	//创建一个含有V个顶点但不含有边的图
 	public Graph(int V){
@@ -109,7 +108,6 @@ public class Graph{
 	}
 	
 	public static void main(String[] args){
-		
 		Graph G = new Graph(scanner);
 		System.out.println(G);
 	}
